@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "27174412215",
+    "firebase_url": "https://register-655a3-default-rtdb.firebaseio.com",
+    "project_id": "register-655a3",
+    "storage_bucket": "register-655a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:27174412215:android:f1d52adedf9faed3909232",
+        "android_client_info": {
+          "package_name": "inventory.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "27174412215-p3cf2c6mkuk7nfg9jvl5v5cunim21n1j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuvPlukh88r2j7VtLkv0Tvwp7fyRjlXPc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "27174412215-p3cf2c6mkuk7nfg9jvl5v5cunim21n1j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
