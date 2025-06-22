@@ -1,18 +1,17 @@
-import React, { useState } from 'react';
-import {
-  View,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  ActivityIndicator,
-  Alert,
-  StyleSheet,
-  KeyboardAvoidingView,
-  Platform,
-} from 'react-native';
 import { useRouter } from 'expo-router';
-import { auth, db } from '../auth/firebaseConfig'; // your firebase file
-import firebase from 'firebase/compat/app';
+import { useState } from 'react';
+import {
+    ActivityIndicator,
+    Alert,
+    KeyboardAvoidingView,
+    Platform,
+    StyleSheet,
+    Text,
+    TextInput,
+    TouchableOpacity,
+    View,
+} from 'react-native';
+import { auth } from '../auth/firebaseConfig'; // your firebase file
 
 const Login = () => {
   const router = useRouter();

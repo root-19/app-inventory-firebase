@@ -1,5 +1,5 @@
-import { Drawer } from 'expo-router/drawer';
 import { Ionicons } from '@expo/vector-icons';
+import { Drawer } from 'expo-router/drawer';
 import { useColorScheme } from 'react-native';
 
 export default function Layout() {
@@ -29,23 +29,57 @@ export default function Layout() {
         name="dashboard"
         options={{
           title: 'Dashboard',
-          drawerIcon: ({ color }) => <Ionicons name="grid-outline" size={22} color={color} />,
+          drawerIcon: ({ color }) => <Ionicons name="home-outline" size={22} color={color} />,
         }}
       />
 
       <Drawer.Screen
         name="rice"
         options={{
+          title: 'Add Rice',
+          drawerIcon: ({ color }) => <Ionicons name="add-circle-outline" size={22} color={color} />,
+        }}
+        
+      />
+
+       <Drawer.Screen
+        name="riceInventory"
+        options={{
           title: 'Rice Inventory',
-          drawerIcon: ({ color }) => <Ionicons name="bag-outline" size={22} color={color} />,
+          drawerIcon: ({ color }) => <Ionicons name="basket-outline" size={22} color={color} />,
+        }}
+        
+      />
+
+      <Drawer.Screen
+        name="profit"
+        options={{
+          title: 'Profit',
+          drawerIcon: ({ color }) => <Ionicons name="trending-up-outline" size={22} color={color} />,
         }}
       />
 
       <Drawer.Screen
         name="utang"
         options={{
-          title: 'Utang',
-          drawerIcon: ({ color }) => <Ionicons name="cash-outline" size={22} color={color} />,
+          title: 'Add Loans',
+          drawerIcon: ({ color }) => <Ionicons name="card-outline" size={22} color={color} />,
+        }}
+      />
+
+      <Drawer.Screen
+        name="utangCollection"
+        options={{
+          title: 'Loan Collections',
+          drawerIcon: ({ color }) => <Ionicons name="wallet-outline" size={22} color={color} />,
+        }}
+      />
+
+      <Drawer.Screen
+        name="utangInventory"
+        options={{
+          title: 'Loan Inventory',
+          drawerIcon: ({ color }) => <Ionicons name="library-outline" size={22} color={color} />,
         }}
       />
     </Drawer>

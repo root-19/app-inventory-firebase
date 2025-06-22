@@ -1,7 +1,7 @@
-import { View, Text, StyleSheet, TextInput, TouchableOpacity, Alert, ScrollView } from 'react-native';
-import React, { useState, useEffect } from 'react';
-import { db } from '../../auth/firebaseConfig';
 import { Ionicons } from '@expo/vector-icons';
+import React, { useEffect, useState } from 'react';
+import { Alert, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { db } from '../../auth/firebaseConfig';
 
 export default function RiceInventory() {
   const [pieces, setPieces] = useState('');
@@ -60,7 +60,7 @@ export default function RiceInventory() {
         <Text style={styles.text}>Rice Inventory Page</Text>
         <View style={styles.totalsRow}>
           <View style={styles.totalsBox}>
-            <Ionicons name="cube-outline" size={28} color="#0ea5e9" style={styles.icon} />
+            <Ionicons name="leaf-outline" size={28} color="#0ea5e9" style={styles.icon} />
             <Text style={styles.totalsLabel}>Total Sacks</Text>
             <Text style={styles.totalsValue}>{totalSacks}</Text>
           </View>
@@ -96,12 +96,14 @@ const styles = StyleSheet.create({
   scrollContainer: {
     flexGrow: 1,
     flex: 1,
+    backgroundColor: '#ffffff',
   },
   container: {
     flex: 1,
     alignItems: 'center',
     padding: 24,
     marginTop: 16,
+    backgroundColor: '#ffffff',
   },
   text: { fontSize: 20, fontWeight: 'bold', marginBottom: 24 },
   totalsRow: {
